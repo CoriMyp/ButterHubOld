@@ -3799,7 +3799,7 @@
             glow.Visible = false
             end
             
-            Home2:Keybind("Toggle UI", Enum.KeyCode[getgenv().Settings.keytoc], function(Value)
+            Home2:Keybind("Toggle UI", Enum.KeyCode.Delete, function(Value)
                 getgenv().Settings.keytoc = Value
                 ToggleUILib()
                 SaveSettings()
@@ -4024,7 +4024,7 @@
     
             Flyingkey = getgenv().Settings.flykey
     
-            Player1:Keybind("Flight keybind", Enum.KeyCode[getgenv().Settings.flykey], function(Value)
+            Player1:Keybind("Flight keybind", Enum.KeyCode.Q, function(Value)
             getgenv().Settings.flykey = Value
             Flyingkey = string.lower(Value)
             SaveSettings()
